@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+<h3>Student Registration Form</h3>
+The student is confirmed: <span th:text="${student.firstName} + ' ' + ${student.lastName}" />
+
+<br><br>
+
+Country: <span th:text="${student.country}"></span>
+<br><br>
+
+Favorite Programming Language: <span th:text="${student.favoriteLanguage}"></span>
+
+<br><br>
+
+Favorite Operating Systems: <span th:text="${student.favoriteSystems}"></span>
+<ul>
+    <li th:each="tempSystem : ${student.favoriteSystems}" th:text="${tempSystem}" />
+</ul>
+</body>
+</html>

@@ -1,0 +1,6 @@
+command line maven
+
+mvnw package #packaging
+#if maven already install on your system use "mvn package"
+java -jar your_jar_file.jar #running
+mvnw spring-boot:run #running
